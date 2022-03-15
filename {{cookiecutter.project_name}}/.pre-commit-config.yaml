@@ -22,24 +22,27 @@ repos:
       - id: flake8
         name: local flake8
         description: wemake-python-styleguide enforcement
-        entry: bash -c 'cd python-orchestration && poetry run flake8 --config=setup.cfg'
+        entry: poetry run flake8
+        args: ["--config=setup.cfg"]
         language: system
         types: [python]
       - id: mypy
         name: local mypy
         description: static type checker
-        entry: bash -c 'cd python-orchestration && poetry run mypy .'
+        entry: poetry run mypy
+        files: ^({{cookiecutter.project_name}}/|tests/)
         language: system
         types: [python]
       - id: coverage
         name: local pytest coverage
         description: runs pytest along with coverage
-        entry: bash -c 'cd python-orchestration && poetry run pytest --cov orchestration tests'
+        entry: poetry run pytest --cov {{cookiecutter.project_name}} tests
         language: system
         types: [python]
       - id: safety
         name: local safety
         description: check for vulnerabilities in packages.
-        entry: bash -c 'cd python-orchestration && poetry run safety check'
+        entry: poetry run safety check
         language: system
         types: [python]
+        pass_filenames: false

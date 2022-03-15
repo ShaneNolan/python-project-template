@@ -2,5 +2,5 @@
 .coverage
 .mypy_cache
 .vscode
-
+.pytest_cache
 __pycache__
