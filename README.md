@@ -12,8 +12,8 @@ Rename `RENAME_ME` to the name of your project.
 ```bash
 PROJECT_NAME="RENAME_ME" &&
 python -m pip install cookiecutter &&
-cookiecutter --no-input \
-gh:ShaneNolan/python-project-template project_name=$PROJECT_NAME &&
+python -m cookiecutter --no-input gh:ShaneNolan/python-project-template \
+project_name=$PROJECT_NAME &&
 (cd $PROJECT_NAME && git init &&
 poetry init --no-interaction --name $PROJECT_NAME &&
 poetry add mypy pytest pytest-cov safety wemake-python-styleguide pre-commit nitpick --dev &&
