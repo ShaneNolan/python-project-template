@@ -1,0 +1,22 @@
+["setup.cfg".flake8]
+format = "wemake"
+show-source = true
+
+# Plugins:
+max-line-length = 80
+max-complexity = 6
+
+# darglint:
+docstring-style = "google"
+
+# Violations:
+ignore = "D100,D104,D401,W504,RST303,RST304,DAR103,DAR203"
+
+per-file-ignores = "tests/*:S101"
+
+["setup.cfg".isort]
+line_length = 80
+
+
+[nitpick.files."setup.cfg"]
+comma_separated_values = ["flake8.ignore"]
