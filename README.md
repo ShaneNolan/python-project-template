@@ -7,16 +7,11 @@
 
 ## Usage
 
-Install cookiecutter if you haven't done so already.
-
-```bash
-python -m pip install cookiecutter
-```
-
 Rename `RENAME_ME` to the name of your project.
 
 ```bash
 PROJECT_NAME="RENAME_ME" &&
+python -m pip install cookiecutter &&
 cookiecutter --no-input \
 gh:ShaneNolan/python-project-template project_name=$PROJECT_NAME &&
 (cd $PROJECT_NAME && git init &&
