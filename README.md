@@ -5,11 +5,10 @@
 [![pytest](https://img.shields.io/badge/package-pytest-blue)](https://github.com/pytest-dev/pytest)
 [![nitpick](https://img.shields.io/badge/package-nitpick-blue)](https://github.com/andreoliwa/nitpick)
 [![safety](https://img.shields.io/badge/package-safety-blue)](https://github.com/pyupio/safety)
-
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 [![wemake-python-styleguide](https://img.shields.io/badge/style-wemake-000000.svg)](https://github.com/wemake-services/wemake-python-styleguide)
 
-This [cookiecutter](https://github.com/cookiecutter/cookiecutter) template creates a preconfigured Python project. Under the hood it uses mypy for static type checking, wemake-python-styleguide
+Automated creation of Python projects with enforced coding standards.
 
 ## Prerequisites
 
