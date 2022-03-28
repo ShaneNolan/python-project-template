@@ -38,7 +38,7 @@ python -m cookiecutter --no-input gh:ShaneNolan/python-project-template \
 project_name=$PROJECT_NAME &&
 (cd $PROJECT_NAME && git init &&
 poetry init --no-interaction --name $PROJECT_NAME &&
-poetry add mypy pytest pytest-cov safety wemake-python-styleguide pre-commit nitpick --dev &&
+poetry add mypy pytest pytest-cov flake8-pytest-style safety wemake-python-styleguide pre-commit nitpick --dev &&
 poetry run nitpick fix &&
 poetry run pre-commit install)
 ```
