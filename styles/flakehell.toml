@@ -23,7 +23,7 @@ max_line_length = 80
 
 ignore = "D100, D104, D401, W504, RST303, RST304, DAR103, DAR203"
 
-per-file-ignores = tests/*:S101,WPS202
+per-file-ignores = "tests/*:S101,WPS202"
 
 [tool.flakehell.plugins]
 "flake8-*" = ["+*"]
