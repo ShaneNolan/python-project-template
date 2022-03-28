@@ -12,7 +12,7 @@ docstring-style = "google"
 # Violations:
 ignore = "D100,D104,D401,W504,RST303,RST304,DAR103,DAR203"
 
-per-file-ignores = "tests/*:S101"
+per-file-ignores = "tests/*:S101,WPS202"
 
 ["setup.cfg".isort]
 line_length = 80
