@@ -23,6 +23,7 @@ repos:
         name: local flake8
         description: wemake-python-styleguide enforcement
         entry: poetry run flake8
+        files: ^({{cookiecutter.project_name}}/|tests/)
         args: ["--config=setup.cfg"]
         language: system
         types: [python]
