@@ -40,7 +40,7 @@ project_name=$PROJECT_NAME &&
 poetry init --no-interaction --name $PROJECT_NAME &&
 poetry add mypy pytest pytest-cov flake8-pytest-style safety wemake-python-styleguide pre-commit nitpick --dev &&
 poetry run nitpick fix &&
-poetry run pre-commit install)
+poetry run pre-commit install) && python -m uninstall cookiecutter
 ```
 
 ## Validate Setup
