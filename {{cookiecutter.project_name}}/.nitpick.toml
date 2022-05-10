@@ -1,2 +1,5 @@
 [tool.nitpick]
-style = "https://raw.githubusercontent.com/ShaneNolan/python-project-template/master/styles/style.toml"
+style = [
+    "https://raw.githubusercontent.com/ShaneNolan/python-project-template/master/styles/style.toml",
+    "styles/style.toml"
+]
