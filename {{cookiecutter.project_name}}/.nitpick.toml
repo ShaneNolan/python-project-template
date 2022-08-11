@@ -1,5 +1,5 @@
 [tool.nitpick]
 style = [
-    "https://raw.githubusercontent.com/ShaneNolan/python-project-template/master/styles/style.toml",
+    "https://raw.githubusercontent.com/ShaneNolan/python-project-template/master/%7B%7Bcookiecutter.project_name%7D%7D/styles/style.toml",
     "styles/style.toml"
 ]
